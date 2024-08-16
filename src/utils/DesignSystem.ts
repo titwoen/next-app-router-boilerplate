@@ -39,10 +39,10 @@ const designSystemTW = () => {
           ...a1,
           [v1.key]: v1.info.reduce(
             (a2, v2) => ({ ...a2, [v2.key]: v2.hex }),
-            {}
+            {},
           ),
         }),
-        {}
+        {},
       ),
     },
     light: {
@@ -51,10 +51,10 @@ const designSystemTW = () => {
           ...a1,
           [v1.key]: v1.info.reduce(
             (a2, v2) => ({ ...a2, [v2.key]: v2.hex }),
-            {}
+            {},
           ),
         }),
-        {}
+        {},
       ),
     },
   };

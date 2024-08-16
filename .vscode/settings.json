@@ -29,12 +29,11 @@
   "prettier.ignorePath": ".gitignore", // Don't run prettier for files listed in .gitignore
   "i18n-ally.localesPaths": ["src/locales"],
   "i18n-ally.keystyle": "nested",
-  "tailwindCSS.classAttributes": [
-    "class",
-    "className",
-    "classNames"
-  ],
+  "tailwindCSS.classAttributes": ["class", "className", "classNames"],
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
