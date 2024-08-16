@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import createNextIntlPlugin from "next-intl/plugin";
 import withBundleAnalyzer from "@next/bundle-analyzer";
 

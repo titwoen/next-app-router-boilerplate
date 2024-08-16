@@ -1,7 +1,8 @@
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import { unstable_setRequestLocale } from "next-intl/server";
 import "@/styles/globals.css";
+
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+
 import { AppConfig } from "@/utils/AppConfig";
 
 export function generateStaticParams() {
