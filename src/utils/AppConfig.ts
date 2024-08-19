@@ -10,9 +10,11 @@ export const AppConfig: {
   locales: TApps.ILanguage[];
   defaultLocale: TApps.ILanguage;
   localePrefix: LocalePrefix;
+  defaultTheme: TApps.ITheme;
 } = {
   name: "Nextjs Starter",
   locales: ["en", "vi"],
   defaultLocale: "vi",
   localePrefix,
+  defaultTheme: "dark",
 };
