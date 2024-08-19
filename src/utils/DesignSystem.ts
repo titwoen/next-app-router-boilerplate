@@ -20,6 +20,11 @@ const designSystemDev = {
   light: {
     colors: [
       {
+        id: "base",
+        key: "base",
+        info: [{ key: "0", hex: "black" }],
+      },
+      {
         id: "current",
         key: "current",
         info: [

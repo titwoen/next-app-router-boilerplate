@@ -2,8 +2,9 @@ import "@/styles/globals.css";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+import { ThemeProvider } from "next-themes";
 
-import { AppConfig } from "@/utils/AppConfig";
+import { AppConfig } from "@/utils/appConfig";
 
 export function generateStaticParams() {
   return AppConfig.locales.map((locale) => ({ locale }));
@@ -26,7 +27,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <ThemeProvider>{children}</ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

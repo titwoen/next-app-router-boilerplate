@@ -1,20 +1,29 @@
 import type { Config } from "tailwindcss";
+import { createThemes } from "tw-colors";
+
+import designSystem from "./src/utils/designSystem";
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/containers/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        Quicksand: "'Quicksand', sans-serif",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    createThemes(() => {
+      return {
+        light: designSystem.designSystemTW.light,
+        dark: designSystem.designSystemTW.dark,
+      };
+    }),
+  ],
 };
 export default config;
